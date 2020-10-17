@@ -1,0 +1,8 @@
+:80
+handle /echo {
+    reverse_proxy hello:5678
+}
+
+handle {
+    reverse_proxy json-server:3000
+}
